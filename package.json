@@ -1,0 +1,30 @@
+{
+  "name": "todo-vue",
+  "version": "1.0.0",
+  "description": "## Local installation",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "browserify-incremental": "^3.1.1",
+    "vue": "^1.0.28",
+    "vue-multiselect": "^1.1.3"
+  },
+  "devDependencies": {
+    "vueify": "^8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/platanus/todo-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/platanus/todo-vue/issues"
+  },
+  "homepage": "https://github.com/platanus/todo-vue#readme"
+}

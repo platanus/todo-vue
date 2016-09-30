@@ -11,4 +11,6 @@ end
 #  finished    :boolean
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  category    :string
+#  string      :string
 #
