@@ -19,6 +19,7 @@ gem 'active_model_serializers', '~> 0.9.3'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'rack-cors', '~> 0.4.0'
 gem 'paperclip', '~> 4.3'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :production do
   gem 'rack-timeout'
