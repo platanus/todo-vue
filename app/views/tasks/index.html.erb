@@ -1,8 +1,8 @@
-<div id="tasks" data-params="<%= params.to_json %>">
+<tasks :params="<%= params.to_json %>" inline-template>
   <p id="notice"><%= notice %></p>
 
   <h1>Listing Tasks</h1>
-  <p>Rails parameters: {{ params | json }}</p>
+    <p>Rails parameters: {{ params | json }}</p>
   <table class="table">
     <thead>
       <tr>
@@ -30,4 +30,4 @@
   <br>
 
   <%= link_to 'New Task', new_task_path %>
-</div>
+</tasks>

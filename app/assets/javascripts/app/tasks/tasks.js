@@ -1,17 +1,9 @@
-Vue.config.debug = true;
-new Vue({
-  el: '#tasks',
-  data: {
-    message: 'Hello Vue.js!',
-    params: null,
+var tasks = Vue.extend({
+  props: ['params'],
+  data: function() {
+    return  {
+      message: 'Hello Vue.js!'
+    };
   },
-  ready() {
-    console.log(this);
-    console.log(this.$el.dataset.params);
-    this.$set('params', JSON.parse(
-      this.$el.dataset.params
-    ))
-  }
-})
-
-console.log('hola');
+});
+Vue.component('tasks', tasks);
