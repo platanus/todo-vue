@@ -2,7 +2,7 @@ export default {
   props: ['categories'],
   data() {
     return  {
-      message: 'Hello Vue.js!'
+      options: ['hola1', 'chao1'],
     };
-  },
+  }
 };

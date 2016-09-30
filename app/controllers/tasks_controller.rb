@@ -1,10 +1,12 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  skip_before_filter :verify_authenticity_token
 
   # GET /tasks
   # GET /tasks.json
   def index
     params
+
     @tasks = Task.all
   end
 
