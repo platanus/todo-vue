@@ -1,14 +1,8 @@
-var Vue = require("vue");
-var VueMultiselect = require("vue-multiselect")
-
-var taskForm = Vue.extend({
+export default {
   props: ['categories'],
-  components: { VueMultiselect },
-  data: function() {
+  data() {
     return  {
       message: 'Hello Vue.js!'
     };
   },
-});
-Vue.component('task-form', taskForm);
-Vue.component("multiselect", VueMultiselect.default);
+};

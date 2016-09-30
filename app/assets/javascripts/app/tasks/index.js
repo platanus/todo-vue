@@ -1,10 +1,8 @@
-var Vue = require("vue");
-var tasks = Vue.extend({
+export default {
   props: ['params'],
-  data: function() {
+  data() {
     return  {
-      message: 'Hello Vue.js!'
+      message: 'Chau Vue.js!'
     };
   },
-});
-Vue.component('tasks', tasks);
+};
