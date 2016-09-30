@@ -1,4 +1,7 @@
 {
   "name": "Todo-vue",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "vue": "^1.0.28"
+  }
 }

@@ -4,6 +4,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
+    params
     @tasks = Task.all
   end
 
