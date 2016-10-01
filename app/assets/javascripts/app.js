@@ -1,4 +1,4 @@
-import Vue from "vue";
+import Vue from "vue/dist/vue.js";
 import Tasks from './app/tasks/tasks';
 import TaskForm from './app/tasks/taskform';
 import { Multiselect } from 'vue-multiselect';
@@ -10,5 +10,5 @@ new Vue({
     Tasks,
     TaskForm,
   },
-  el: 'body',
+  el: '#mainapp',
 });

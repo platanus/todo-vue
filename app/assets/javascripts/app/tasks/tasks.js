@@ -16,7 +16,7 @@ export default {
         body: JSON.stringify({
           finished: event.target.checked,
         })
-      })
+      });
     }
   },
 };
