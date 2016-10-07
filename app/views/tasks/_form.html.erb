@@ -14,7 +14,9 @@
     <% end %>
 
     <multiselect
-      :options="options">
+      :selected="selected"
+      :options="options"
+      @update="updateSelected">
     </multiselect>
 
     <div class="form-group">
