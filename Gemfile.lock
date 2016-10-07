@@ -1,3 +1,20 @@
+GIT
+  remote: git://github.com/alchapone/polymer-elements-rails.git
+  revision: 75321e75f315d9ad2f1cbe32884afdf742b90a8d
+  specs:
+    polymer-elements-rails (1.1.1)
+      polymer-rails (~> 1.0, >= 1.0.3)
+
+GIT
+  remote: git://github.com/alchapone/polymer-rails.git
+  revision: c1493a5eb9181a411116df3346504c16f2dfe68c
+  specs:
+    polymer-rails (1.2.4.1)
+      nokogiri (~> 1.6)
+      nokogumbo (= 1.4.2)
+      rails (>= 3.1.0)
+      sprockets (~> 3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -148,11 +165,6 @@ GEM
       mimemagic (= 0.3.0)
     pg (0.19.0)
     pkg-config (1.1.7)
-    polymer-rails (1.2.4.1)
-      nokogiri (~> 1.6)
-      nokogumbo (= 1.4.2)
-      rails (>= 3.1.0)
-      sprockets (~> 3.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -289,7 +301,8 @@ DEPENDENCIES
   jquery-rails
   paperclip (~> 4.3)
   pg
-  polymer-rails
+  polymer-elements-rails!
+  polymer-rails!
   pry-byebug
   pry-rails
   puma

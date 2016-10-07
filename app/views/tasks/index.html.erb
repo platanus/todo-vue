@@ -1,7 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Tasks</h1>
-
+<script type="text/javascript">
+  var hola = function(event) {
+    console.log(event)
+  }
+</script>
 <table class="table">
   <thead>
     <tr>
@@ -17,7 +21,7 @@
       <tr>
         <td><%= task.name %></td>
         <td><%= task.description %></td>
-        <td><%= check_box_tag('finished', true, task.finished) %> <%= task.finished %></td>
+        <td><paper-checkbox value="true" on-iron-change="hola"><%= task.finished %></paper-checkbox></td>
         <td><%= link_to 'Show', task %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -25,7 +29,5 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-
 <%= link_to 'New Task', new_task_path %>
