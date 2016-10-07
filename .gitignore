@@ -22,3 +22,4 @@
 .env
 /public/system/*
 /vendor/assets/bower_components
+/node_modules

@@ -1,0 +1,9 @@
+<dom-module id="task-row">
+  <link rel="stylesheet" href="task-row.css" />
+  <template>
+    <div class="col-xs-4">{{data.name}}</div>
+    <div class="col-xs-4">{{data.description}}</div>
+    <div class="col-xs-4"><paper-checkbox checked="{{data.finished}}" on-change="hola">{{label}}</paper-checkbox></div>
+  </template>
+  <script src="task-row.js"></script>
+</dom-module>
