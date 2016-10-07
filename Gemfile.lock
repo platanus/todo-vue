@@ -134,6 +134,8 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    nokogumbo (1.4.2)
+      nokogiri
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
@@ -146,6 +148,11 @@ GEM
       mimemagic (= 0.3.0)
     pg (0.19.0)
     pkg-config (1.1.7)
+    polymer-rails (1.2.4.1)
+      nokogiri (~> 1.6)
+      nokogumbo (= 1.4.2)
+      rails (>= 3.1.0)
+      sprockets (~> 3.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -282,6 +289,7 @@ DEPENDENCIES
   jquery-rails
   paperclip (~> 4.3)
   pg
+  polymer-rails
   pry-byebug
   pry-rails
   puma
@@ -302,4 +310,4 @@ DEPENDENCIES
   versionist
 
 BUNDLED WITH
-   1.13.1
+   1.13.2
