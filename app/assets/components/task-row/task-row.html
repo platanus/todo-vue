@@ -3,7 +3,13 @@
   <template>
     <div class="col-xs-4">{{data.name}}</div>
     <div class="col-xs-4">{{data.description}}</div>
-    <div class="col-xs-4"><paper-checkbox checked="{{data.finished}}" on-change="hola">{{label}}</paper-checkbox></div>
+    <div class="col-xs-4"><paper-checkbox checked="{{data.finished}}" on-change="change">{{label}}</paper-checkbox></div>
+    <iron-ajax
+      id="request"
+      url="/tasks/{{data.id}}.json"
+      body="params"
+      method="PUT"
+      on-response="handleResponse"></iron-ajax>
   </template>
   <script src="task-row.js"></script>
 </dom-module>
